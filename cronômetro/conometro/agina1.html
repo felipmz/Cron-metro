@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conometro</title>
+</head>
+<style>
+    body{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        background-color: black;
+        
+    }
+    .num{
+        padding: 10px;
+    }
+    h1{
+        color: rgb(255, 255, 255);
+    }
+    #numero{
+        color: rgb(104, 219, 219);
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+    #comeca{
+        background-color: rgb(89, 230, 76);
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #pausar{
+        background-color: rgb(78, 129, 224);
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #parar{
+        background-color: rgb(236, 89, 89);
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <div id="tudo">
+    <h1 style="color: rgb(255, 255, 255);" >Cronômentro</h1>
+    <div class="num" >
+        <div id="numero">00:00:00</div>
+    </div>
+    <input id="comeca" onclick="comeca()" type="button" value="começar">
+    <input id="pausar" onclick="pausar()"  type="button" value="pausar">
+    <input id="parar" onclick="parar()"  type="button" value="parar">
+</div>
+
+</body>
+<script src="pg2.js"></script>
+</html>
